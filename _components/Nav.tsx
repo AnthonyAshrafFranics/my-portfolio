@@ -4,11 +4,24 @@ import React from "react";
 
 type Props = {
     handleNav: () => void;
+    aboutRef:any;
 };
 
 const navItems = ["Home", "About", "Services", "Approach", "Contact"];
 
-const Nav = ({handleNav}: Props) => {
+const Nav = ({handleNav,aboutRef}: Props) => {
+
+  const scroll = (val:string) => {
+    switch (val) {
+      case "About":
+        aboutRef.current.scrollIntoView()
+        break;
+    
+      default:
+        break;
+    }
+  }
+
   return (
     <div className="w-[100] sticky z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
       <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
@@ -21,7 +34,7 @@ const Nav = ({handleNav}: Props) => {
         </div>
         {navItems.map((value,key) => {
             return(
-                <div className="nav-link" key={key}>{value}</div>
+                <div className="nav-link" onClick={() => scroll(value)} key={key}>{value}</div>
             )
         })}
         <div>

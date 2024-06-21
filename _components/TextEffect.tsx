@@ -9,13 +9,13 @@ const TextEffect = () => {
         1500, // wait 1s before replacing "Mice" with "Hamsters"
         'Web Developer',
         1500,
-        'Designer',
+        'Full Stack Developer',
         1500,
         'Programmer',
         1500
       ]}
       speed={50}
-      className='text-[2rem] md:text-[3rem] text-[#23C79C] font-bold uppercase'
+      className='text-[1.5rem] md:text-[2.5rem] text-[#23C79C] font-bold uppercase'
       repeat={Infinity}
     />
   );

@@ -32,7 +32,7 @@ const Approach = () => {
                 {val.description}
               </p>
               </div>
-            </div>) : (<div className="cursor-pointer bg-gradient-to-r  from-[#4a39ed] to-[#00d4ff] flex items-center justify-center rounded-lg transform transition-transform duration-500 hover:rotate-y-180 uppercase font-semibold text-center text-[2rem] p-[2rem] h-[34rem]"><h1 className="border-[3px] p-[1rem] rounded-full">{val.title}</h1></div>)}
+            </div>) : (<div className={`cursor-pointer ${index === 2 ? "bg-gradient-to-r  from-[#00d4ff] to-[#4a39ed]" : index === 1 ? "bg-gradient-to-t  from-[#4a39ed] to-[#00d4ff]" : "bg-gradient-to-r  from-[#4a39ed] to-[#00d4ff]"} flex items-center justify-center rounded-lg transform transition-transform duration-500 hover:rotate-y-180 uppercase font-semibold text-center text-[2rem] p-[2rem] h-[34rem]`}><h1 className="border-[3px] p-[1rem] rounded-full">{val.title}</h1></div>)}
           </div>
         ))}
 

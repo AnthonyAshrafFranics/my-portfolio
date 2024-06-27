@@ -1,5 +1,6 @@
 "use client"
 import About from '@/_components/About'
+import Approach from '@/_components/Approach'
 import Hero from '@/_components/Hero'
 import MobileNav from '@/_components/MobileNav'
 import Nav from '@/_components/Nav'
@@ -19,6 +20,7 @@ const Home = () => {
         <div className='relative z-[30]'>
           <About aboutRef={aboutRef}/>
           <Services/>
+          <Approach/>
         </div>
       </div>
     </div>

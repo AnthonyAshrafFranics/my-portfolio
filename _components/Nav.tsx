@@ -38,7 +38,7 @@ const Nav = ({handleNav,aboutRef}: Props) => {
             )
         })}
         <div>
-            <Bars3Icon onClick={handleNav} className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-[#23C79C]"/>
+            <Bars3Icon onClick={handleNav} className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-[#4A39ED]"/>
         </div>
       </div>
     </div>

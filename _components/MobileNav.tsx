@@ -25,7 +25,7 @@ const MobileNav = ({nav, handleNav}:Props) => {
           );
         })}
       </div>
-      <div onClick={handleNav} className="absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-[#23C79C]">
+      <div onClick={handleNav} className="absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-[#4A39ED]">
         <XMarkIcon />
       </div>
     </div>

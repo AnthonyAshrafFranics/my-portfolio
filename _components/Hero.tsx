@@ -25,10 +25,10 @@ const Hero = ({homeRef}:any) => {
             <Link href="https://drive.google.com/uc?export=download&id=18liiHofwmjkCtbOHd4kdyiwAHb_ge7Xf" className="px-[2rem] bg-gradient-to-r  from-[#4a39ed] to-[#00d4ff] hover:bg-gradient-to-r  hover:to-[#4a39ed] hover:from-[#00d4ff] transition-all rounded duration-200 py-[1rem] text-[18px] font-bold uppercase  text-black flex items-center space-x-2"  >
               Download CV <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />{" "}
             </Link>
-            <Link href="#" className="flex items-center space-x-2 hover:border hover:rounded hover:border-[#4A39ED]">
+            {/* <Link href="#" className="flex items-center space-x-2 hover:border hover:rounded hover:border-[#4A39ED]">
                 <PlayCircleIcon className="w-[4rem] h-[4rem]  transition-all duration-200 text-[#4A39ED]"/>
                 <p className="text-[18px] font-semibold text-white">Watch The Video</p>
-            </Link>
+            </Link> */}
           </div>
         </div>
 

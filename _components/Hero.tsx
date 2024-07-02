@@ -5,9 +5,9 @@ import Image from "next/image";
 import { ArrowDownTrayIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero = ({homeRef}:any) => {
   return (
-    <div className="h-[88vh] bg-[url('/images/banner.jpg')] pt-[10vh] bg-cover bg-center">
+    <div className="h-[88vh] bg-[url('/images/banner.jpg')] pt-[10vh] bg-cover bg-center" ref={homeRef}>
       <Particle />
 
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center">
@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6 ">
-            <Link href="https://drive.google.com/uc?export=download&id=18liiHofwmjkCtbOHd4kdyiwAHb_ge7Xf" className="px-[2rem] hover:bg-[#7df3d3] transition-all rounded duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#4A39ED] text-black flex items-center space-x-2"  >
+            <Link href="https://drive.google.com/uc?export=download&id=18liiHofwmjkCtbOHd4kdyiwAHb_ge7Xf" className="px-[2rem] bg-gradient-to-r  from-[#4a39ed] to-[#00d4ff] hover:bg-gradient-to-r  hover:to-[#4a39ed] hover:from-[#00d4ff] transition-all rounded duration-200 py-[1rem] text-[18px] font-bold uppercase  text-black flex items-center space-x-2"  >
               Download CV <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />{" "}
             </Link>
             <Link href="#" className="flex items-center space-x-2 hover:border hover:rounded hover:border-[#4A39ED]">

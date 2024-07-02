@@ -20,7 +20,7 @@ const About = ({aboutRef}:any) => {
             As a dedicated Software Engineer with a Bachelor's degree in Computer Science, I bring a blend of technical expertise and creativity to every project. Over the past two years, I have successfully designed and developed web applications that drive business success for my clients. My focus is on crafting intuitive, efficient, and scalable solutions that not only meet but exceed client expectations. Whether it's building a robust e-commerce platform or a bespoke software system, I am committed to delivering high-quality results that digitize and streamline business operations. Let's collaborate to turn your vision into reality.
             </p>
           </div>
-          <Link href="https://drive.google.com/uc?export=download&id=18liiHofwmjkCtbOHd4kdyiwAHb_ge7Xf" className="px-[2rem] hover:bg-[#7df3d3] transition-all rounded duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#4A39ED] text-black flex items-center space-x-2 w-fit">
+          <Link href="https://drive.google.com/uc?export=download&id=18liiHofwmjkCtbOHd4kdyiwAHb_ge7Xf" className="px-[2rem]  transition-all rounded duration-200 py-[1rem] text-[18px] font-bold uppercase bg-gradient-to-r  from-[#4a39ed] to-[#00d4ff] hover:bg-gradient-to-r  hover:to-[#4a39ed] hover:from-[#00d4ff] text-black flex items-center space-x-2 w-fit">
             Download CV{" "}
             <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />{" "}
           </Link>

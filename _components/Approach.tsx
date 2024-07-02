@@ -6,11 +6,11 @@ const phases = [
   { title: "Phase 3", heading: "Deployment & Launch", description: "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up and deploy it on your server." },
 ];
 
-const Approach = () => {
+const Approach = ({approachRef}:any) => {
   const [hoveredPhase, setHoveredPhase] = useState<number | null>(null);
   console.log("hoveredPhase",hoveredPhase)
   return (
-    <div className="bg-[#121121] pt-[4rem] md:pt-[8rem] pb-[5rem] ">
+    <div className="bg-[#121121] pt-[4rem] md:pt-[8rem] pb-[5rem] " ref={approachRef}>
       <p className="heading">
         My <span className="text-[#4A39ED]">Approach</span>
       </p>

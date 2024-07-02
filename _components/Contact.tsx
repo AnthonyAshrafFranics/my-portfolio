@@ -2,9 +2,9 @@ import React from "react";
 import { MdOutlineLocationOn, MdPhoneInTalk } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
 
-const Contact = () => {
+const Contact = ({contactRef}:any) => {
   return (
-    <div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem] ">
+    <div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem] " ref={contactRef}>
       <p className="heading">
         Let’s work <span className="text-[#4A39ED]">together!</span>
       </p>
@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2  w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
         <div>
           <div className="flex items-center">
-            <div className="w-fit border p-4 rounded-full cursor-pointer bg-gradient-to-r  from-[#4a39ed] to-[#00d4ff] hover:bg-gradient-to-r  hover:to-[#4a39ed] hover:from-[#00d4ff]">
+            <div className="w-fit border p-4 rounded-full cursor-pointer bg-gradient-to-r  from-[#4a39ed] to-[#00d4ff] hover:bg-gradient-to-r  hover:to-[#4a39ed] hover:from-[#00d4ff] transition-all duration-500">
               <MdPhoneInTalk className="text-white text-[2.5rem]" />
             </div>
             <div className="ml-3">

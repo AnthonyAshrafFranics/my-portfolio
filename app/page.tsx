@@ -14,18 +14,23 @@ const Home = () => {
   const [nav, setNav] = useState<boolean>(false)
   const handleNav = () => setNav(!nav);
   const aboutRef = useRef();
+  const homeRef = useRef();
+  const serviceRef = useRef();
+  const skillRef = useRef();
+  const approachRef = useRef();
+  const contactRef = useRef();
   return (
     <div className='overflow-x-hidden'>
       <div>
-        <Nav handleNav={handleNav} aboutRef={aboutRef}/>
+        <Nav handleNav={handleNav} aboutRef={aboutRef} homeRef={homeRef} serviceRef={serviceRef} skillRef={skillRef} approachRef={approachRef} contactRef={contactRef} />
         <MobileNav nav={nav} handleNav={handleNav}/>
-        <Hero/>
+        <Hero homeRef={homeRef}/>
         <div className='relative z-[30]'>
           <About aboutRef={aboutRef}/>
-          <Services/>
-          <Skills/>
-          <Approach/>
-          <Contact/>
+          <Services serviceRef={serviceRef}/>
+          <Skills skillRef={skillRef}/>
+          <Approach approachRef={approachRef}/>
+          <Contact contactRef={contactRef}/>
           <Footer/>
         </div>
       </div>

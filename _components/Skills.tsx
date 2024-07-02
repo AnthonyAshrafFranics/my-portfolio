@@ -107,9 +107,9 @@ const skills = [
   },
 ];
 
-const Skills = () => {
+const Skills = ({skillRef}:any) => {
   return (
-    <div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem] ">
+    <div className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem] " ref={skillRef}>
       <p className="heading">
         My <span className="text-[#4A39ED]">Skills</span>
       </p>
@@ -118,7 +118,7 @@ const Skills = () => {
         <Slider {...settings}>
           {skills.map((val, index) => (
             <div className=" ml-3 uppercase font-semibold text-center p-[2rem]">
-              <div className="border-[0.5rem] border-[#4A39ED] bg-[#4A39ED] cursor-pointer hover:bg-[#121212] rounded-lg h-[15rem] flex flex-col items-center justify-center">
+              <div className="cursor-pointer bg-gradient-to-t  from-[#4a39ed] to-[#00d4ff] hover:bg-gradient-to-t  hover:to-[#4a39ed] hover:from-[#00d4ff] rounded-lg h-[15rem] flex flex-col items-center justify-center">
                 <div className="items-center flex justify-center">
                     <img src={val.image} alt="" width="50px" height="50px" className=""/>
                 </div>

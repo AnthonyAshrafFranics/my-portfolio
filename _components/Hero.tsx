@@ -18,7 +18,7 @@ const Hero = ({homeRef}:any) => {
 
           <TextEffect />
           <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
-          Welcome! I’m a passionate Software Engineer specializing in Full Stack Web Application Development. With over 2 years of professional experience, I design and develop dynamic websites that enhance business growth and create custom software solutions to meet the unique needs of my clients. Let’s build something amazing together!
+          Welcome! I’m a passionate Software Engineer specializing in Full Stack Web Application Development. With over 3 years of professional experience, I design and develop dynamic websites that enhance business growth and create custom software solutions to meet the unique needs of my clients. Let’s build something amazing together!
           </p>
 
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6 ">
